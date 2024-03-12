@@ -16,7 +16,7 @@
 
 /* Body */
 .page {
-  font-variation-settings: var(--text-font-weight);
+  font-variation-settings: "wght" var(--text-font-weight);
   min-inline-size: 320px;
   min-block-size: 100dvb;
   color: var(--text-color);
@@ -60,7 +60,6 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  width: -moz-min-content;
   width: min-content;
   text-align: start;
   margin: 0 45.1%;
