@@ -24,6 +24,7 @@
   background-image: var(--page-background-image, none);
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
 }
 
 /* Main */
@@ -89,6 +90,7 @@
   content: "▶";
   position: absolute;
   left: -15px;
+  top: 0;
 }
 
 .theme-menu__button::after {
@@ -192,58 +194,6 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
   z-index: 1;
 }
 
-.like-icon .heart {
-  transition: fill 0.1s;
-  transform-origin: center center;
-}
-
-.like-icon .contour {
-  fill: var(--text-color);
-}
-
-.like-icon .main-body {
-  fill: var(--page-background-color);
-  transition: fill 0.3s linear;
-}
-
-.like-icon .core {
-  fill: var(--page-background-color);
-  transition: fill 0.3s 0.05s;
-}
-
-.like-icon .sparks {
-  opacity: 0;
-  fill: var(--heart-color);
-}
-
-.like-icon:hover .main-body {
-  fill: var(--text-color);
-}
-
-.like-icon:hover .core {
-  fill: var(--text-color);
-}
-
-.like-icon:active .main-body {
-  fill: var(--heart-color);
-}
-
-.like-icon:active .core {
-  fill: var(--heart-color);
-}
-
-.like-icon.is-liked .contour {
-  fill: var(--heart-color);
-}
-
-.like-icon.is-liked .main-body {
-  fill: var(--heart-color);
-}
-
-.like-icon.is-liked .core {
-  fill: var(--heart-color);
-}
-
 .floppy-image {
   width: 21px;
   height: 21px;
@@ -312,7 +262,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
 .card__icon-button {
   padding: 0;
   width: 39px;
-  height: 36px;
+  height: 34px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -334,7 +284,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
 .card__like-button-container {
   display: flex;
   justify-content: end;
-  align-items: stretch;
+  align-items: center;
   gap: 5px;
   padding: 0 25px 23px 25px;
 }
@@ -394,17 +344,18 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
   gap: 26px;
 }
 
+.dialog__text-container {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+
 .dialog__text {
   text-transform: uppercase;
   line-height: 1.5;
   max-width: 234px;
   width: 100%;
-}
-
-.dialog__text-container {
-  display: flex;
-  gap: 22px;
-  align-items: center;
 }
 
 .dialog .floppy-image {
@@ -429,11 +380,17 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
   }
 
   .save-button {
+    block-size: 84px;
     flex-direction: column;
+    justify-content: center;
+  }
+
+  .dialog__container {
+    gap: 28px;
   }
 
   .floppy-image {
-    width: 28px;
+    width: 29px;
     height: 28px;
   }
 
