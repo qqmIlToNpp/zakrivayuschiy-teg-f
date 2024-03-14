@@ -16,7 +16,7 @@
 
 /* Body */
 .page {
-  font-variation-settings: var(--text-font-weight);
+  font-variation-settings: "wght" var(--text-font-weight);
   min-inline-size: 320px;
   min-block-size: 100dvb;
   color: var(--text-color);
@@ -247,6 +247,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
   right: 25px;
   top: 27px;
   text-transform: uppercase;
+  font-weight: var(--text-font-weight-lihgt);
 }
 
 .image-label-lowercase {
