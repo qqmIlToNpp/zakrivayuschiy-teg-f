@@ -4,4 +4,8 @@
   --main-font-family: Inter-Variable, sans-serif;
   --fantasy-font-family: "Press Start 2P", fantasy;
   --heart-color: #ff0000;
+  --title-font-weight-lihgt: 700;
+  --text-font-weight-lihgt: 400;
+  --title-font-weight-dark: 785;
+  --text-font-weight-dark: 465;
 }

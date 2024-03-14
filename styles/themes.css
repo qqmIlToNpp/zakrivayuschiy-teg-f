@@ -7,13 +7,13 @@
 
 /* светлая */
 :root.theme-light {
+  --text-font-weight: var(--text-font-weight-lihgt);
+  --title-font-weight: var(--title-font-weight-lihgt);
   --page-background-color: #fff;
   --background-color: #d3d3d3;
   --header-background: var(--page-background-color);
   --background-color-start: #e7e7e7;
   --background-color-end: #1a1a1a;
-  --title-font-weight: "wght" 700;
-  --text-font-weight: "wght" 400;
   --text-color: #000;
   --mix-blend-color: var(--page-background-color);
   --stroke-color: var(--text-color);
@@ -29,13 +29,13 @@
 
 @media (prefers-color-scheme: light) {
   :root {
+    --text-font-weight: var(--text-font-weight-lihgt);
+    --title-font-weight: var(--title-font-weight-lihgt);
     --page-background-color: #fff;
     --background-color: #d3d3d3;
     --header-background: var(--page-background-color);
     --background-color-start: #e7e7e7;
     --background-color-end: #1a1a1a;
-    --title-font-weight: "wght" 700;
-    --text-font-weight: "wght" 400;
     --text-color: #000;
     --mix-blend-color: var(--page-background-color);
     --stroke-color: var(--text-color);
@@ -52,13 +52,13 @@
 
 /* темная */
 :root.theme-dark {
+  --text-font-weight: var(--text-font-weight-dark);
+  --title-font-weight: var(--title-font-weight-dark);
   --page-background-color: #000;
   --background-color: var(--page-background-color);
   --header-background: var(--page-background-color);
   --background-color-start: #007f0c;
   --background-color-end: #004306;
-  --title-font-weight: "wght" 785;
-  --text-font-weight: "wght" 465;
   --text-color: #00cc14;
   --mix-blend-color: var(--text-color);
   --stroke-color: var(--text-color);
@@ -74,13 +74,13 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --text-font-weight: var(--text-font-weight-dark);
+    --title-font-weight: var(--title-font-weight-dark);
     --page-background-color: #000;
     --background-color: var(--page-background-color);
     --header-background: var(--page-background-color);
     --background-color-start: #007f0c;
     --background-color-end: #004306;
-    --title-font-weight: "wght" 785;
-    --text-font-weight: "wght" 465;
     --text-color: #00cc14;
     --mix-blend-color: var(--text-color);
     --stroke-color: var(--text-color);

@@ -16,7 +16,7 @@
 
 /* Body */
 .page {
-  font-variation-settings: "wght" var(--text-font-weight);
+  font-variation-settings: var(--text-font-weight);
   min-inline-size: 320px;
   min-block-size: 100dvb;
   color: var(--text-color);
@@ -31,7 +31,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 52px;
 }
 
 /* Header */
@@ -47,6 +47,7 @@
 .header__link {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   text-transform: uppercase;
+  outline: none;
 }
 
 .header__title {
@@ -215,7 +216,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
 
 .card__title {
   font-size: 18px;
-  font-variation-settings: var(--title-font-weight);
+  font-variation-settings: "wght" var(--title-font-weight);
   padding: 4px 10px;
 }
 
@@ -223,6 +224,8 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
   display: block;
   object-fit: cover;
   object-position: center;
+  inline-size: 100%;
+  aspect-ratio: 1 / 1;
 }
 
 .card__image-container {
@@ -235,7 +238,6 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
 .image-label {
   font-family: var(--fantasy-font-family);
   font-size: 14px;
-  font-variation-settings: var(--text-font-weight);
   z-index: 1;
   opacity: 0.5;
   mix-blend-mode: hard-light;
@@ -257,6 +259,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
   display: flex;
   flex-direction: column;
   gap: 26px;
+  font-variation-settings: "wght" var(--text-font-weight);
 }
 
 .card__icon-button {
@@ -367,7 +370,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
 /* медиазапросы */
 @media (width < 376px) {
   .header {
-    padding: 120px 0 20px;
+    padding: 120px 0 25px;
   }
 
   .theme-menu__list {
@@ -377,6 +380,9 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
   .card__text-container {
     padding: 25px 28px 25px;
     gap: 27px;
+    font-weight: 400;
+font-size: 18px;
+line-height: 117%;
   }
 
   .save-button {
